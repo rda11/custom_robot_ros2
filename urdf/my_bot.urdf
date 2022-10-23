@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+<robot name="my bot">
+
+    <link name="world_link"/>
+    
+
+ <link name="base_link">
+    <visual>
+        <geometry>
+            <cylinder length="0.05" radius="0.2"/>
+        </geometry>
+        <material name="gray">
+            <color rgba="0.5 0.5 0.5 1"/>
+        </material>
+    </visual>
+
+    <collision>
+        <geometry>
+            <cylinder length="0.05" radius="0.2"/>
+        </geometry>
+    </collision>
+
+    <inertial>
+        <mass value="2.0"/>
+        <origin rpy="0 0 0" xyz="0 0 0.025"/>
+        <inertia ixx="0.0204" ixy="0.0" ixz="0.0" iyy="0.0204" iyz="0.0" izz="0.00667"/>
+    </inertial>
+
+</link>
+
+<gazebo reference="base_link">
+    <material>Gazebo/Gray</material>
+</gazebo>
+
+<joint name="base_joint" type="fixed">
+    <parent link="world_link"/>
+    <child link="base_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.025"/>
+    <dynamics damping="10" friction="1.0"/>
+</joint>
+
+<link name="first_link">
+    <visual>
+        <geometry>
+            <cylinder length="0.5" radius="0.08"/>
+        </geometry>
+        <material name="yellow">
+            <color rgba="0.6 0.6 0 1"/>
+        </material>
+    </visual>
+    
+    <collision>
+        <geometry>
+            <cylinder length="0.4" radius="0.08"/>
+        </geometry>
+    </collision>
+
+    <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0.225"/>
+        <mass value="1.5"/>
+        <inertia ixx="0.0224" ixy="0.0" ixz="0.0" iyy="0.0224" iyz="0.0" izz="0.0008"/>
+    </inertial>
+         
+</link>
+
+<gazebo reference="first_link">
+    <material>Gazebo/Yellow</material>
+</gazebo>
+
+<joint name="first_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <parent link="base_link"/>
+    <child link="first_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.225"/>
+    <dynamics damping="10" friction="1.0"/>
+</joint>
+
+<link name="second_link">
+    <visual>
+        <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+        </geometry>
+        <material name="Gray">
+            <color rgba="0.2 0.2 0.2 1"/>
+        </material>
+    </visual>
+    
+    <collision>
+        <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+        </geometry>
+    </collision>
+
+    <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0.3"/>
+        <mass value="0.8"/>
+        <inertia ixx="0.002666667" ixy="0.0" ixz="0.0" iyy="0.002666667" iyz="0.0" izz="0.000666667"/>
+    </inertial>
+    
+</link>
+
+<gazebo reference="second_link">
+    <material>Gazebo/Gray</material>
+</gazebo>
+
+<joint name="second_joint" type="fixed">
+    <axis xyz="0 0 1"/>
+    <parent link="first_link"/>
+    <child link="second_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.3"/>
+    <dynamics damping="10" friction="1.0"/>
+</joint>
+
+<link name="third_link">
+    <visual>
+        <geometry>
+            <cylinder length="0.5" radius="0.045"/>
+        </geometry>
+        <material name="yellow">
+            <color rgba="0.6 0.6 0 1"/>
+        </material>
+    </visual>
+    
+    <collision>
+        <geometry>
+            <cylinder length="0.5" radius="0.045"/>
+        </geometry>
+    </collision>
+
+    <inertial>
+        <origin rpy="0 0 0" xyz="0.32 0 0"/>
+        <mass value="0.5"/>
+        <inertia ixx="0.010669792" ixy="0.0" ixz="0.0" iyy="0.010669792" iyz="0.0" izz="0.000084375"/>
+    </inertial>
+    
+</link>
+
+<gazebo reference="third_link">
+    <material>Gazebo/Yellow</material>
+</gazebo>
+
+<joint name="third_joint" type="fixed">
+    <axis xyz="0 0 1"/>
+    <parent link="second_link"/>
+    <child link="third_link"/>
+    <origin rpy="0 1.57 0" xyz="0.32 0 0"/>
+    <dynamics damping="10" friction="1.0"/>
+</joint>
+
+<link name="fourth_link">
+    <visual>
+        <geometry>
+            <cylinder length="0.1" radius="0.08"/>
+        </geometry>
+        <material name="Gray">
+            <color rgba="0.2 0.2 0.2 1"/>
+        </material>
+    </visual>
+    
+    <collision>
+        <geometry>
+            <cylinder length="0.1" radius="0.08"/>
+        </geometry>
+    </collision>
+
+    <inertial>
+        <origin rpy="0 0 0" xyz="0 0 0.3"/>
+        <mass value="0.3"/>
+        <inertia ixx="0.00073" ixy="0.0" ixz="0.0" iyy="0.00073" iyz="0.0" izz="0.00016"/>
+    </inertial>
+    
+</link>
+
+<gazebo reference="fourth_link">
+    <material>Gazebo/Gray</material>
+</gazebo>
+
+<joint name="fourth_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <parent link="third_link"/>
+    <child link="fourth_link"/>
+    <origin rpy="1.57 0 0" xyz="0 0 0.3"/>
+    <limit lower="-2.2" upper="2.2" effort="10" velocity="0.5"/>
+    <dynamics damping="10" friction="1.0"/>
+</joint>
+
+<link name="fifth_link">
+    <visual>
+        <geometry>
+            <cylinder length="0.3" radius="0.03"/>
+        </geometry>
+        <material name="yellow">
+            <color rgba="0.6 0.6 0 1"/>
+        </material>
+    </visual>
+    
+    <collision>
+        <geometry>
+                <cylinder length="0.3" radius="0.03"/>
+        </geometry>
+    </collision>
+
+    <inertial>
+        <origin rpy="0 0 0" xyz="0 0.2 0"/>
+        <mass value="0.15"/>
+        <inertia ixx="0.00115875" ixy="0.0" ixz="0.0" iyy="0.00115875" iyz="0.0" izz="0.0000225"/>
+    </inertial>
+    
+</link>
+
+<gazebo reference="fifth_link">
+    <material>Gazebo/Yellow</material>
+</gazebo>
+
+<joint name="fifth_joint" type="fixed">
+    <axis xyz="0 0 1"/>
+    <parent link="fourth_link"/>
+    <child link="fifth_link"/>
+    <origin rpy="1.57 0 0" xyz="0 0.2 0"/>
+    <dynamics damping="10" friction="1.0"/> 
+</joint>
+
+<link name="sixth_link">
+    <visual>
+        <geometry>
+            <cylinder length="0.08" radius="0.05"/>
+        </geometry>
+        <material name="Gray">
+            <color rgba="0.2 0.2 0.2 1"/>
+        </material>
+    </visual>
+    
+    <collision>
+        <geometry>
+            <cylinder length="0.08" radius="0.05"/>
+        </geometry>
+    </collision>
+
+    <inertial>
+        <origin rpy="0 0 0" xyz="0 0 -0.18"/>
+        <mass value="0.05"/>
+        <inertia ixx="0.000057917" ixy="0.0" ixz="0.0" iyy="0.000057917" iyz="0.0" izz="0.000010417"/>
+    </inertial>
+    
+</link>
+
+<gazebo reference="sixth_link">
+    <material>Gazebo/Gray</material>
+</gazebo>
+
+<joint name="sixth_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <parent link="fifth_link"/>
+    <child link="sixth_link"/>
+    <origin rpy="1.57 0 0" xyz="0 0 -0.18"/>
+    <limit lower="-2.2" upper="2.2" effort="10" velocity="0.5"/>
+    <dynamics damping="10" friction="1.0"/>
+</joint>
+
+<link name="seventh_link">
+    <visual>
+        <geometry>
+            <cylinder length="0.15" radius="0.02"/>
+        </geometry>
+        <material name="yellow">
+            <color rgba="0.6 0.6 0 1"/>
+        </material>
+    </visual>
+    
+    <collision>
+        <geometry>
+            <cylinder length="0.15" radius="0.02"/>
+        </geometry>
+    </collision>
+
+    <inertial>
+        <origin rpy="0 0 0" xyz="0 0.2 -0.18"/>
+        <mass value="0.03"/>
+        <inertia ixx="0.00005925" ixy="0.0" ixz="0.0" iyy="0.00005925" iyz="0.0" izz="0.000006"/>
+    </inertial>
+    
+</link>
+
+<gazebo reference="seventh_link">
+    <material>Gazebo/Yellow</material>
+</gazebo>
+
+<joint name="seventh_joint" type="fixed">
+    <parent link="sixth_link"/>
+    <child link="seventh_link"/>
+    <origin rpy="1.57 0 0" xyz="0 -0.12 0"/>
+    <dynamics damping="10" friction="1.0"/>
+</joint>
+
+<link name="eighth_link">
+    <visual>
+        <geometry>
+            <cylinder length="0.05" radius="0.025"/>
+        </geometry>
+        <material name="red">
+            <color rgba="0.8 0.2 0 1"/>
+        </material>
+    </visual>
+    
+    <collision>
+        <geometry>
+            <cylinder length="0.05" radius="0.025"/>
+        </geometry>
+    </collision>
+
+    <inertial>
+        <origin rpy="0 0 0" xyz="0 0.2 -0.18"/>
+        <mass value="0.01"/>
+        <inertia ixx="0.000003646" ixy="0.0" ixz="0.0" iyy="0.000003646" iyz="0.0" izz="0.000003125"/>
+    </inertial>
+    
+</link>
+
+<gazebo reference="eighth_link">
+    <material>Gazebo/Orange</material>
+</gazebo>
+
+<joint name="eighth_joint" type="fixed">
+    <parent link="seventh_link"/>
+    <child link="eighth_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0.1"/>
+    <dynamics damping="10" friction="1.0"/>
+</joint>
+
+
+
+<gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+      <parameters>/home/rda-x200/my_ws/src/my_bot/config/controll.yaml</parameters>
+    </plugin>
+</gazebo>
+
+<ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+</hardware>
+
+<joint name="first_joint">
+    <command_interface name="position">
+      <param name="min">-3.14</param>
+      <param name="max">3.14</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <param name="initial_position">0.0</param>  
+</joint>
+<joint name="fourth_joint">
+    <command_interface name="position">
+      <param name="min">-3.14</param>
+      <param name="max">3.14</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <param name="initial_position">-1.57</param>  
+</joint>
+<joint name="sixth_joint">
+    <command_interface name="position">
+      <param name="min">-3.14</param>
+      <param name="max">3.14</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <param name="initial_position">0.0</param>  
+</joint>
+
+</ros2_control>
+
+    
+</robot>

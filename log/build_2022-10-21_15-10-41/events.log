@@ -1,0 +1,46 @@
+[0.000000] (-) TimerEvent: {}
+[0.000189] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.000228] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.099584] (-) TimerEvent: {}
+[0.202458] (-) TimerEvent: {}
+[0.305488] (-) TimerEvent: {}
+[0.406467] (-) TimerEvent: {}
+[0.507848] (-) TimerEvent: {}
+[0.609159] (-) TimerEvent: {}
+[0.710226] (-) TimerEvent: {}
+[0.810792] (-) TimerEvent: {}
+[0.911375] (-) TimerEvent: {}
+[1.011929] (-) TimerEvent: {}
+[1.112395] (-) TimerEvent: {}
+[1.166402] (my_bot) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/rda-x200/my_ws/src/my_bot/install/my_bot', '--editable', '--build-directory', '/home/rda-x200/my_ws/src/my_bot/build/my_bot/build', '--no-deps', 'install_data', '--install-dir', '/home/rda-x200/my_ws/src/my_bot/install/my_bot'], 'cwd': '/home/rda-x200/my_ws/src/my_bot/build/my_bot', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/rda-x200', 'SVGA_VGPU10': '0', 'LANGUAGE': 'en_IN:en', 'SNAP_INSTANCE_KEY': '', 'USER': 'rda-x200', 'SNAP_COMMON': '/var/snap/code/common', 'VSCODE_NLS_CONFIG': '{"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'SSH_AGENT_PID': '1337', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/111/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/rda-x200', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'SNAP_LIBRARY_PATH': '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void', 'TERM_PROGRAM_VERSION': '1.72.2', 'DESKTOP_SESSION': 'ubuntu', 'SNAP_USER_DATA': '/home/rda-x200/snap/code/111', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-5445aebf-1.72.2-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL': '1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/111/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/111/usr/share/code/code', 'MANAGERPID': '1115', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'SNAP_REVISION': '111', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2694', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/rda-x200/my_ws/install:/home/rda-x200/rda_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'rda-x200', '_': '/usr/bin/colcon', 'SNAP_CONTEXT': '9v4zpwbQvADPP3ymUJ3m0eXiGZfa0j78zRs5DziBDZYc2xfzeVgV', 'JOURNAL_STREAM': '8:32878', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'SNAP_VERSION': 'd045a5ed', 'USERNAME': 'rda-x200', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'SNAP_INSTANCE_NAME': 'code', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/rda-x200/.local/bin:/opt/ros/foxy/bin:/home/rda-x200/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/rajab:@/tmp/.ICE-unix/1396,unix/rajab:/tmp/.ICE-unix/1396', 'VSCODE_AMD_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'INVOCATION_ID': 'ef75619526e244b1b5aa1ef1babc23a6', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'SNAP_DATA': '/var/snap/code/111', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': '', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-aa4617426e.sock', 'TERM_PROGRAM': 'vscode', 'SNAP_USER_COMMON': '/home/rda-x200/snap/code/common', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/snap/code/111/usr/share/glib-2.0/schemas', 'SNAP_ARCH': 'amd64', 'AMENT_PREFIX_PATH': '/home/rda-x200/my_ws/install/my_bot:/home/rda-x200/rda_ws/install/urdf_example:/home/rda-x200/rda_ws/install/articubot_one:/home/rda-x200/rda_ws/install/agv_forklift:/opt/ros/foxy', 'SNAP_COOKIE': '9v4zpwbQvADPP3ymUJ3m0eXiGZfa0j78zRs5DziBDZYc2xfzeVgV', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'GDK_PIXBUF_MODULEDIR': '/snap/code/111/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'SNAP_REEXEC': '', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SNAP_NAME': 'code', 'GDK_PIXBUF_MODULE_FILE': '/home/rda-x200/snap/code/common/.cache/gdk-pixbuf-loaders.cache', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '--ms-enable-electron-run-as-node', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rda-x200/my_ws/src/my_bot/build/my_bot', 'VSCODE_CLI': '1', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SNAP_REAL_HOME': '/home/rda-x200', 'VSCODE_CODE_CACHE_PATH': '/home/rda-x200/.config/Code/CachedData/d045a5eda657f4d7b676dedbfa7aab8207f8a075', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rda-x200/my_ws/src/my_bot/install/my_bot/lib/python3.8/site-packages:/home/rda-x200/my_ws/install/my_bot/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'SNAP': '/snap/code/111', 'COLCON': '1', 'ELECTRON_NO_ATTACH_CONSOLE': '1', 'CMAKE_PREFIX_PATH': '/home/rda-x200/rda_ws/install/urdf_example:/home/rda-x200/rda_ws/install/articubot_one:/home/rda-x200/rda_ws/install/agv_forklift', 'VSCODE_PID': '2741'}, 'shell': False}
+[1.213543] (-) TimerEvent: {}
+[1.314544] (-) TimerEvent: {}
+[1.415761] (-) TimerEvent: {}
+[1.436363] (my_bot) StdoutLine: {'line': b'running develop\n'}
+[1.517435] (-) TimerEvent: {}
+[1.579568] (my_bot) StdoutLine: {'line': b'running egg_info\n'}
+[1.579866] (my_bot) StdoutLine: {'line': b'creating my_bot.egg-info\n'}
+[1.579965] (my_bot) StdoutLine: {'line': b'writing my_bot.egg-info/PKG-INFO\n'}
+[1.580030] (my_bot) StdoutLine: {'line': b'writing dependency_links to my_bot.egg-info/dependency_links.txt\n'}
+[1.580093] (my_bot) StdoutLine: {'line': b'writing entry points to my_bot.egg-info/entry_points.txt\n'}
+[1.580163] (my_bot) StdoutLine: {'line': b'writing requirements to my_bot.egg-info/requires.txt\n'}
+[1.580226] (my_bot) StdoutLine: {'line': b'writing top-level names to my_bot.egg-info/top_level.txt\n'}
+[1.584749] (my_bot) StdoutLine: {'line': b"writing manifest file 'my_bot.egg-info/SOURCES.txt'\n"}
+[1.618023] (-) TimerEvent: {}
+[1.629864] (my_bot) StdoutLine: {'line': b"reading manifest file 'my_bot.egg-info/SOURCES.txt'\n"}
+[1.630675] (my_bot) StdoutLine: {'line': b"writing manifest file 'my_bot.egg-info/SOURCES.txt'\n"}
+[1.679204] (my_bot) StdoutLine: {'line': b'running build_ext\n'}
+[1.680060] (my_bot) StdoutLine: {'line': b'Creating /home/rda-x200/my_ws/src/my_bot/install/my_bot/lib/python3.8/site-packages/site.py\n'}
+[1.682585] (my_bot) StdoutLine: {'line': b'Creating /home/rda-x200/my_ws/src/my_bot/install/my_bot/lib/python3.8/site-packages/my-bot.egg-link (link to .)\n'}
+[1.683349] (my_bot) StdoutLine: {'line': b'\n'}
+[1.683560] (my_bot) StdoutLine: {'line': b'Installed /home/rda-x200/my_ws/src/my_bot/build/my_bot\n'}
+[1.683685] (my_bot) StdoutLine: {'line': b'running install_data\n'}
+[1.683917] (my_bot) StdoutLine: {'line': b'creating /home/rda-x200/my_ws/src/my_bot/install/my_bot/share/ament_index\n'}
+[1.684066] (my_bot) StdoutLine: {'line': b'creating /home/rda-x200/my_ws/src/my_bot/install/my_bot/share/ament_index/resource_index\n'}
+[1.684137] (my_bot) StdoutLine: {'line': b'creating /home/rda-x200/my_ws/src/my_bot/install/my_bot/share/ament_index/resource_index/packages\n'}
+[1.684205] (my_bot) StdoutLine: {'line': b'copying resource/my_bot -> /home/rda-x200/my_ws/src/my_bot/install/my_bot/share/ament_index/resource_index/packages\n'}
+[1.684281] (my_bot) StdoutLine: {'line': b'copying package.xml -> /home/rda-x200/my_ws/src/my_bot/install/my_bot/share/my_bot\n'}
+[1.719088] (-) TimerEvent: {}
+[1.742654] (my_bot) CommandEnded: {'returncode': 0}
+[1.786009] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[1.787253] (-) EventReactorShutdown: {}
